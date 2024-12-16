@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: ariel;
+    border: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+}
+
+.navbar {
+    height: 70px;
+    box-shadow: 0px 0px 2px white;
+    /* background-color: rgba(3, 3, 3, 0.719); */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.15rem;
+    color: black;
+     /* background-image: url("photos/image1.jpg"); */
+}
+
+.nav-logo {
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar ul li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ..........Navbar list.............. */
+.jk {
+    /* width: 5rem;
+    height: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.jk :hover {
+    border-bottom: 1.5px solid white;
+    color: white;
+}
+
+.navbar a {
+    height: 25px;
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.719);
+    font-weight: bold;
+    color: #ff990ae8;
+}
+
+/* .navbar a:hover {
+    border-bottom: 2px solid red; 
+} */
+
+/* ...........Navbar Search.............. */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 33px;
+    border-radius: 4px;
+}
+
+
+.nav-search :hover {
+    color: black;
+    border: 2px solid #FBA834;
+}
+
+.nav-search input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: black;
+    background-color: #FBA834;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.search-icon :hover {
+    border: none;
+}
+
+/* -----------------Navbar-Panel------------------------- */
+/* .panel {
+    height: 27px;
+    background-color: #451952;
+    color: white;
+    display: flex;
+    align-items: center;
+    font: italic;
+} */
+
+/* ----------------------Main Content--------------------------------- */
+.main-container1 {
+    position: relative;
+    height: 500px;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-image: url(photos/image1.jpg); */
+    background-color: #191c22;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container1 :hover {
+    color: white;
+}
+
+.div1 {
+    height: 75%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0px 3px 10px black;
+}
+
+.div1 :hover {
+    /* background-color: #6b3deb; */
+    /* background-image: url("photos/image2.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-color: #FBA834; */
+}
+
+.main-container1 .div1 a {
+    text-decoration: none;
+    /* color: white; */
+    color: #5ad618;
+}
+
+.main-container1 a :hover {
+    color: green;
+}
+
+/* ----------------Box 1 scholar------------------------ */
+.scholar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 90%;
+    border: 1px solid rgba(109, 109, 185, 0.637);
+    box-shadow: 0px 0px 10px black;
+}
+
+.div1 .scholar :hover {
+    color: white;
+}
+
+/* _------------Photos Slider------------ */
+.slider {
+    height: 75%;
+    width: 65%;
+    /* border: 1px solid white;  */
+    background-color: rgba(0, 0, 0, 0.596);
+    background-image: url("slider/Bblockimage2.jpg");
+    background-size: 100% 100%;
+    animation: slide 15s 0s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font: italic;
+    border: 1px solid black;
+    box-shadow: 0px 10px 10px black;
+    /* animation: slide 2s linear 5s infinite normal; */
+}
+
+@keyframes slide{
+    25% {
+        background-image: url("slider/Bblockimage1.jpg");
+    }
+
+    50% {
+        background-image: url("slider/Bblockimage2.jpg");
+    }
+
+    75% {
+        background-image: url("photos/Bblockimage3.jpg");
+    }
+
+    100% {
+        background-image: url("photos/Bblockimage5.jpg");
+    }
+
+}
+
+.slider-panel {
+    height: 30px;
+    background-color: #661010c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+
+/* ------------DAVV MPONLINE------------------------------- */
+.davvmponline {
+    height: 50px;
+    width: 70%;
+    /* background-color: rgba(193, 180, 180, 0.486); */
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.davvmponline a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.davvmponline a:hover {
+    color: rgb(37, 27, 15);
+}
+
+.mponlinelogo {
+    height: 30px;
+    width: 90%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.676);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 25px;
+}
+
+.mponlinelogo a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #FBA834;
+}
+
+
+/* ---------------SECOND MAIN CONTAINER---------------------- */
+.second-container {
+    height: 600px;
+    display: flex;
+    background-image: url("slider/Bblockimage3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* filter: blur(2px); */
+    
+}
+
+.latest-info {
+    width: 100%;
+    padding: 10px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: gold;
+    text-align: center;
+    position: relative;
+    /* background-color: red; */
+}
+.fresher {
+    height: 500px;
+    width: 30%;
+    position: absolute;
+    
+    top: 60px;
+    left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.534);
+    /* background-color: rgba(255, 255, 255, 0.18); */
+    /* background-color: #191c22; */
+    /* background-image: url(photos/blackshadow.png);
+    background-size: cover;
+    background-position: center; */
+    /* transform: rotate(180deg); */
+}
+.firstyear {
+    height: 40px;
+    width: 100%;
+    background-color: #FBA834;
+    color: black;
+    font-weight: bolder;
+    
+}
+.firstyear h2 {
+    padding-top: 5px;
+}
+
+.abc {
+    height: 500px;
+    width: 65%;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    background-image: url(photos/blue_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    /* transform: rotate(180deg); */
+    
+}
+/* --------------------container 3------------------------------ */
+
+.highlights {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.highlights h2 {
+    padding-top: 10px;
+}
+
+.quicklinks {
+    height: 150px;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+ 
+.quickheading {
+    height: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.555);
+    color: black;
+    padding: 5px;
+    background-color: #FEB941;
+    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.quickheading h3 {
+    position: absolute;
+    left: 10px;
+
+}
+
+.quickheading ul {
+   margin-top: 30px;
+   
+}
+.quickheading ul a {
+    display: block;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+.quickheading ul a :hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================FOOTER========================= */
+
+
+.foot-panel1 {
+    height: 30px;
+    background-color: #640D6B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-panel1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* --------------------------- */
+.foot-panel2 {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.893);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.foot-panel2 ul {
+    margin-top: 20px;
+}
+
+.foot-panel2 ul a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.621);
+    margin-top: 10px;
+    font-size: .85rem;
+}
+
+.foot-panel2 ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* ---------------------------------- */
+.foot-panel3 {
+    height: 50px;
+    background-color: #37475a;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.68);
+    position: fixed;
+    bottom: 0%;
+    width: 99vw;
+}
